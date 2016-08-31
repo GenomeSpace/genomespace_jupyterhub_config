@@ -1,0 +1,29 @@
+
+
+
+div.dynamic-instructions {
+	background-color: #0F0;
+}
+
+img.jpy-logo {
+   content:url("https://gsui.genomespace.org/jsui/images/gssmalllogo2.png")
+}
+
+
+#login-main .auth-form-header, .btn-jupyter {
+	background: #68ACE1;
+	border-color: #589BE1;
+}
+
+.btn-jupyter:hover {
+        background: #88CCE1;
+        border-color: #589BE1;
+}
+
+#login-main .form-control:focus, #login-main input[type=submit]:focus {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px #88CCE1;
+    border-color: #88CCE1;
+    outline-color: #88CCE1;
+}
+
+

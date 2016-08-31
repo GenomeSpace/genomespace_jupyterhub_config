@@ -1,0 +1,117 @@
+
+a {
+     color: #2673c1;
+}
+
+body {
+     background-color: #f1f2f2 !important;
+}
+
+loading-screen {
+    background: #eeeeee  ;
+    background-repeat: repeat-x;
+    background-size: 20px 20px;
+    bottom: 0;
+    color: white;
+    font-size: 40pt;
+    left: 0;
+    padding-top: 200px;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    top: 0;
+    vertical-align: middle;
+    z-index: 100;
+}
+
+body > #header {
+    background-color: #f1f2f2 !important;
+}
+
+div#notebook {
+    padding-top: 35px;
+}
+
+.notebook_app > #header {
+    box-shadow: none;
+}
+
+
+#header-container {
+    /* background: rgba(0, 0, 0, 0) url("../genomespace/bg.jpg") repeat scroll center center;*/
+    background-size: 20px 40px;
+    padding-right: 20px;
+    height: 50px;
+}
+
+body[data-terminals-available="True"] #header, body.edit_app #header {
+    min-height: unset;
+}
+.header-bar {
+    display: none;
+}
+img.current_kernel_logo {
+    display: none !important;
+}
+body {
+    background-color: white;
+    color: #333333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    overflow: hidden;
+}
+#tabs li:last-of-type {
+    display: none;
+}
+#save_widget {
+    /* color: white;*/
+    text-shadow: 0 0 6px #002244;
+}
+#save_widget #notebook_name:hover {
+    color: #f1f2f2;
+}
+.navbar-text {
+    color: white;
+    text-shadow: 0 0 6px #002244;
+}
+#kernel_indicator, #modal_indicator.modal_indicator {
+    text-shadow: none;
+}
+#current-mode {
+    text-shadow: none;
+}
+#maintoolbar-container .btn-group:last-of-type {
+    display: none;
+}
+#notebook, #site {
+    background-color: #f1f2f2;
+}
+#ipython-main-app {
+    background-color: #fff;
+    box-shadow: 0 0 12px 1px rgba(87, 87, 87, 0.2);
+    height: auto;
+    min-height: 0;
+}
+#tab_content {
+    padding: 15px;
+}
+#slider {
+    top: 129px;
+}
+.sidebar-button-main {
+    top: 230px;
+}
+
+
+#ipython_notebook img {
+    height: 48px;
+    width: 180px;
+     margin-top: -5px;
+}
+
+#header {
+    height: 80px;
+}
+
+
