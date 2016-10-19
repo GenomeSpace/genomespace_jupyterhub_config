@@ -10,7 +10,12 @@ EXPOSE 8888
 ENV GS_CODE_ROOT_DIR /combined
 ENV GS_NOTEBOOK_EXTENSION_DIR ${GS_CODE_ROOT_DIR}/jupyter-notebook/profile/extensions
 
+#We will load our jupyter-hub specific extensions from here
+ENV GS_HUB_EXTENSION_DIR /jupyter-hub-extensions
+
+
 VOLUME ${GS_CODE_ROOT_DIR}
+VOLUME ${GS_HUB_EXTENSION_DIR}
 
 USER root
 # fetch juptyerhub-singleuser entrypoint

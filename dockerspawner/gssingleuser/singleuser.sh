@@ -8,12 +8,24 @@ then
 fi
 
 
-PYTHONPATH=$GS_NOTEBOOK_EXTENSION_DIR
+PYTHONPATH=$GS_NOTEBOOK_EXTENSION_DIR:$GS_HUB_EXTENSION_DIR
 export PYTHONPATH
+
+export PATH=$PATH:$GS_HUB_EXTENSION_DIR
+
+
+
 jupyter nbextension enable --py --sys-prefix widgetsnbextension
 jupyter serverextension enable --py genomespace
 jupyter nbextension  install  --py genomespace --user --symlink
 jupyter nbextension  enable  --py genomespace
+
+
+cd $GS_HUB_EXTENSION_DIR
+jupyter nbextension install gshub_notebook_initializer --user --symlink
+jupyter nbextension enable gshub_notebook_initializer/main --user
+cd /home/jovyan/work
+
 
 
 exec jupyterhub-singleuser \
